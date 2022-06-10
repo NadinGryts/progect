@@ -1,0 +1,430 @@
+
+html
+	font-family: 'Roboto', sans-serif
+
+header
+	position: relative
+	height: 50px
+
+nav
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #212121
+	height: 50px
+	width: 100%
+	z-index: 5
+a
+	text-decoration: none
+
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style: none
+	&_link
+		color: #fff
+		font-size: 15px
+		font-weight: 300
+		&:hover
+			text-decoration: none
+			color: $color-b
+	&_item
+		border-right: 2px dotted black
+		padding-right: 28px
+		&:last-child
+			border-right: none
+.hamb
+	display: none
+
+.sub
+	position: absolute
+	top: 50px
+	width: 100%
+	height: 87px
+	background-color: rgba(0, 0, 0, 0.6)
+	&_logo
+		display: block
+		max-width: 100%
+		margin-top: 16px
+	&_text
+		margin-top: 6px
+		font-weight: 400
+		font-size: 13px
+		color: #FFFFFF
+		opacity: 0.5
+	&_col
+		margin-top: 19px
+		font-weight: 300
+		font-size: 12px
+		text-align: right
+		color: #FFFFFF
+	&_tel
+		display: block
+		font-weight: 400
+		margin-top: 8px
+		font-size: 22px
+		line-height: 12px
+		text-align: right
+		text-transform: uppercase
+		color: #FFFFFF
+	&_btn
+		margin-top: 19px
+		width: 172px
+		height: 46px
+		background-image: linear-gradient(0deg, $color-b 0%, #afdce6 100%)
+		border-radius: 4px
+		font-weight: 400
+		font-size: 14px
+		text-transform: uppercase
+		color: #FFFFFF
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
+.promo
+	min-height: 800px
+	background: url(../img/bg/BG1.png) center (center / cover) no-repeat
+	padding: 137px 0 135px 0
+
+	&_h1
+		margin: 0
+		font-weight: 700
+		font-size: 60px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+
+	&_h2
+		margin-top: 16px
+		font-weight: 700
+		font-size: 36px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+
+	&_deskr
+		margin-top: 16px
+		font-weight: 400
+		font-size: 18px
+		line-height: 24px
+		text-align: center
+		color: #FFFFFF
+
+	&_btn
+		display: block
+		margin: 0 auto
+		margin-top: 115px
+		width: 259px
+		height: 63px
+		background-image: linear-gradient(0deg, $color-b 0%, #cdecf2 100%)
+		box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+		border-radius: 4px
+		font-weight: 400
+		font-size: 18px
+		text-transform: uppercase
+		color: #FFFFFF
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
+.rea
+	padding: 18px 0 64px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		width: 113px
+		height: 113px
+		background: $color-b
+		border-radius: 100%
+	&_deskr
+		width: 343px
+	&_tt
+		font-weight: 400
+		font-size: 17px
+		line-height: 21px
+		color: $color-b
+	&_text
+		font-weight: 300
+		font-size: 16px
+		line-height: 21px
+		color: #202020
+
+.label
+	display: relative
+	margin: 0 auto
+	padding: 5px 12px
+	width: 112px
+	height: 24px
+	background: #000000
+	font-weight: 400
+	font-size: 11px
+	text-align: center
+	text-transform: uppercase
+	color: #FFFFFF
+	z-index: 2
+	&_white
+		background: #fff
+		color: #000
+	  
+
+
+.title
+	position: relative
+	margin-top: 33px
+	font-weight: 700
+	font-size: 38px
+	text-align: center
+	text-transform: uppercase
+	color: #222222
+	z-index: 2
+	&_white 
+		color: #fff
+
+.subtitle
+	position: relative
+	margin-top: 19px
+	font-weight: 400
+	font-size: 17px
+	align-items: center
+	text-align: center
+	color: #222222
+	z-index: 2
+	&_white 
+		color: #fff
+
+
+
+.mob
+	min-height: 864px
+	padding: 48px 0 79px 0
+	background: url(../img/bg/BG2.png) center (center / cover) no-repeat
+	.row
+		margin-top: 32px
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 92px
+		&_1
+			background: url(../img/bg/plash/BG3.png) center (center / cover) no-repeat
+		&_2
+			background: url(../img/bg/plash/BG4.png) center (center / cover) no-repeat
+		&_3
+			background: url(../img/bg/plash/BG5.png) center (center / cover) no-repeat
+		&_4
+			background: url(../img/bg/plash/BG6.png) center (center / cover) no-repeat
+		&_5
+			background: url(../img/bg/plash/BG7.png) center (center / cover) no-repeat
+		&_6
+			background: url(../img/bg/plash/BG8.png) center (center / cover) no-repeat
+		&_sub
+			font-weight: 400
+			font-size: 24px
+			align-items: center
+			text-align: center
+			text-transform: uppercase
+			color: #FFFFFF
+		&_plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 35px
+			left: 50%
+			transform: translate(-50%)
+			background: #000
+			width: 26px
+			height: 26px
+			border-radius: 100%
+			margin: 0 auto
+			cursor: pointer
+			&:before
+				content: '' 
+				position: absolute
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $color-b
+				transition: 0.3s
+			&:after
+				content: '' 
+				display: block
+				height: 14px
+				width: 2px
+				background-color: $color-b
+				transition: 0.3s
+			&:hover
+				&:before, &::after
+					background-color: #fff
+
+							   
+.auto
+	position: relative
+	min-height: 896px
+	padding: 56px 0 137px 0
+	background: url(../img/bg/BG2.png) center (center / cover) no-repeat
+	&_img
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_descr 
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+		
+	.black 
+		position: absolute 
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background: #070716
+		z-index: 1
+.req
+	padding: 66px 0 87px 0
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		font-weight: 400
+		font-size: 22px
+		color: #1CA8C3
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			font-weight: 300
+			font-size: 17px
+			line-height: 24px
+			margin-bottom: 7px
+			&:before
+				content: ''
+				display: inline-block
+				position: absolute
+				left: -32px
+				top: 2px
+				width: 21px
+				height: 20px
+				background: url(../icons/galka.png) center (center / cover) no-repeat
+	&_descr
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		display: flex
+		align-items: center
+		color: #1CA8C3
+	.war
+		.req_title
+			color: $color-r
+		.req_list
+			li
+				&:before
+					background: url(../icons/galka_red.png) center (center / cover) no-repeat
+
+.world
+	position: relative
+	min-height: 716px
+	background: url('../img/bg/BG9.png') center (center / cover) no-repeat  
+	padding: 48px 0 21px 0
+	&_link 
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 49px
+		text-align: center
+		font-size: 15px
+		font-weight: 400
+		line-height: 68px
+		text-transform: uppercase
+		color: #1fbad6
+		&:hover 
+			text-decoration: none
+			color: #fff       
+footer 
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+		
+	
+	&_icons
+		width: 156px
+		display: flex
+		justify-content: space-between
+		&_item
+			display: flex
+			justify-content: center
+			align-items: center
+			a
+			width: 35px
+			height: 35px
+			background: #070716
+			border-radius: 100%
+			i
+				color: #fff
+			
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main
+			display: flex
+			justify-content: space-between 
+			padding: 0 10px
+			a
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_dop
+			display: flex
+			justify-content: space-between 
+			margin-top: 10px
+			a
+				font-weight: 300
+				font-size: 11px
+				text-transform: uppercase
+				color: #999999
+		&_lang
+			display: block
+			text-align: center 
+			margin: 0 auto
+			margin-top: 12px
+			font-weight: 400
+			font-size: 11px
+			text-transform: uppercase
+			color: #1FBAD6
+	&_video
+		a>img
+			margin: 0 6px
+.xs_v
+	display: none	
